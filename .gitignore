@@ -141,3 +141,30 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Android
+android/.gradle/
+android/app/build/
+*.keystore
+*.jks
+local.properties
+
+# Firebase
+google-services.json
+firebase-adminsdk*.json
+.firebase/
+
+# Environment & secrets (never commit)
+.env
+.env.local
+.env.*.local
+
+# OS/IDE cruft
+Thumbs.db
+.idea/
+*.iml
+.DS_Store
+
+# Logs
+*.log
+logs/
