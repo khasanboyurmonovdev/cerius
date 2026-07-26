@@ -45,7 +45,7 @@ export const config = {
 
   /** CORS allow-list per docs/07. */
   cors: {
-    origins: ['capacitor://localhost', 'http://localhost:5173', 'https://app.cerius.app'],
+    origins: ['capacitor://localhost', 'http://localhost:5173', 'https://app.xeriusfit.app'],
   },
 
   sentryDsn: env.SENTRY_DSN,

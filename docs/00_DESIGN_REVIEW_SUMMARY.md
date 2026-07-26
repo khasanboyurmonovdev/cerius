@@ -1,4 +1,4 @@
-# CERIUS MVP DESIGN REVIEW & SUMMARY
+# XERIUSFIT MVP DESIGN REVIEW & SUMMARY
 
 **Date:** 2025-01-20 — **Revised 2026-07-26 (Fable 5 design review)**  
 **Status:** ✅ DESIGN PHASE COMPLETE - READY FOR IMPLEMENTATION  
@@ -25,7 +25,7 @@ Eight factual/consistency errors were found and fixed in place. Every correction
 
 ## Executive Summary
 
-Cerius is an AI-powered meal-planning app targeting busy professionals (25-45) who want healthier eating without the planning stress. The MVP is a **30-day Android launch** with meal plan generation, grocery lists, and freemium subscription ($5.99/month).
+xeriusFit is an AI-powered meal-planning app targeting busy professionals (25-45) who want healthier eating without the planning stress. The MVP is a **30-day Android launch** with meal plan generation, grocery lists, and freemium subscription ($5.99/month).
 
 **Business Model:** Freemium → Premium subscription on Google Play  
 **Target Year 1:** 10K+ downloads, 500+ subscribers, 4.8+ rating  
@@ -359,7 +359,7 @@ Cerius is an AI-powered meal-planning app targeting busy professionals (25-45) w
 
 ## Conclusion
 
-**Cerius MVP is well-designed and launch-ready.** 
+**xeriusFit MVP is well-designed and launch-ready.** 
 
 The product solves a clear problem (meal planning stress) in a hot market (AI + health). The business model is proven (freemium subscriptions). The tech stack is pragmatic (React + Capacitor + Node + MongoDB). The timeline is aggressive but achievable (30 days, 176 hours).
 

@@ -1,4 +1,4 @@
-# Cerius Development Environment Setup Report
+# xeriusFit Development Environment Setup Report
 
 **Date:** 2026-07-26  
 **Developer:** khasanboyurmonov1998@yahoo.com  
@@ -78,11 +78,11 @@ PATH += C:\Users\khasa\AppData\Local\Android\Sdk\platform-tools
 
 ## 4. Remaining Manual Steps (Before First Build)
 
-These are pre-scaffolding tasks you'll need to complete when ready to build Cerius:
+These are pre-scaffolding tasks you'll need to complete when ready to build xeriusFit:
 
 - [ ] **Create Firebase project**
   - Go to [Firebase Console](https://console.firebase.google.com)
-  - Create project for Cerius
+  - Create project for xeriusFit
   - Enable Authentication (Email, Google, etc.)
   - Enable Firestore or Realtime Database
   - Enable Cloud Messaging (FCM)
@@ -103,7 +103,7 @@ These are pre-scaffolding tasks you'll need to complete when ready to build Ceri
   - Go to [Google Play Console](https://play.google.com/console)
   - Create developer account
   - Create project
-  - Get package name (e.g., com.cerius.app)
+  - Get package name (`app.xeriusfit.android`)
   - Generate and store upload keystore outside repo
   - Create service account JSON → store outside repo
 
@@ -122,7 +122,7 @@ These are pre-scaffolding tasks you'll need to complete when ready to build Ceri
 
 - [ ] **Configure Windows Defender exclusions (performance optimization)**
   - Settings → Virus & threat protection → Manage settings → Add exclusions:
-    - Your dev folder (e.g., `C:\Users\khasa\OneDrive\Desktop\cerius`)
+    - Your dev folder (`C:\dev\cerius` — folder name stays `cerius` by design)
     - `%USERPROFILE%\.gradle` (Gradle cache)
     - `C:\Users\khasa\AppData\Local\Android\Sdk` (Android SDK)
     - `%LOCALAPPDATA%\pnpm\store` (pnpm store location)

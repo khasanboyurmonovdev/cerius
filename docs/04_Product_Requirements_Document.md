@@ -282,7 +282,7 @@ Acceptance Criteria:
 - "Share" button on grocery list screen
 - Share options: SMS, Email, Copy to Clipboard, Save as PDF
 - Format is readable and organized by category
-- Includes header: "Cerius Grocery List - Week of Jan 15"
+- Includes header: "xeriusFit Grocery List - Week of Jan 15"
 - Recipients can view but can't edit
 ```
 
@@ -545,13 +545,13 @@ Key Moments:
 13. Can swipe right to view "Previous Week" if needed
 14. Checks off groceries
 15. Shares list to wife via SMS
-16. Life continues; Cerius is done
+16. Life continues; xeriusFit is done
 
 Key Moments:
 - Second-week experience frictionless
 - Plan generation still fast
 - Grocery list auto-aggregated
-- Sharing makes Cerius useful for household
+- Sharing makes xeriusFit useful for household
 ```
 
 ### Flow 3: Premium User → Batch Planning
@@ -594,7 +594,7 @@ Key Moments:
 ```
 ┌─────────────────────────┐
 │                         │
-│    CERIUS Logo          │  (top, centered, 60px)
+│    XERIUSFIT Logo          │  (top, centered, 60px)
 │    (Meal + AI icon)     │
 │                         │
 │  "Your AI Meal Planner" │  (tagline, gray, 14px)
@@ -762,7 +762,7 @@ Key Moments:
 
 ```
 ┌─────────────────────────┐
-│ ☰   Cerius   ⚙️          │  (top nav: menu, title, settings)
+│ ☰   xeriusFit   ⚙️          │  (top nav: menu, title, settings)
 ├─────────────────────────┤
 │                         │
 │ Week of Jan 15          │  (header, date range)
@@ -1110,7 +1110,7 @@ SETTINGS FLOW:
 **Pricing Model:**
 - Monthly: $5.99/month
 - Annual: $49.99/year (equivalent to $4.17/month)
-- Apple's 30% cut: Cerius net = $4.19/month or $34.99/year
+- Apple's 30% cut: xeriusFit net = $4.19/month or $34.99/year
 
 **Scenarios (assuming $5.99 ARPU):**
 - Conservative: 1,000 subs × $5.99 × 12 = $71,880 ARR
@@ -1304,7 +1304,7 @@ SETTINGS FLOW:
 │                         │
 │    ⚠️ Connection Lost   │
 │                         │
-│ Couldn't reach Cerius   │
+│ Couldn't reach xeriusFit   │
 │ Check your internet     │
 │ connection              │
 │                         │

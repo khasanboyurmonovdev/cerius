@@ -1,5 +1,5 @@
 {
-  "name": "cerius",
+  "name": "xeriusfit",
   "version": "0.0.1",
   "description": "Android-first AI meal-planning app",
   "private": true,
@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit",
     "frontend": "pnpm --filter frontend",
     "backend": "pnpm --filter backend",
-    "shared": "pnpm --filter @cerius/shared"
+    "shared": "pnpm --filter @xeriusfit/shared"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

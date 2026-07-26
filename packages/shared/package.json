@@ -1,5 +1,5 @@
 {
-  "name": "@cerius/shared",
+  "name": "@xeriusfit/shared",
   "version": "0.0.1",
   "description": "Shared TypeScript types and constants",
   "private": true,

@@ -1,4 +1,4 @@
-import type { MealPlan } from '@cerius/shared';
+import type { MealPlan } from '@xeriusfit/shared';
 
 import {
   MealPlanGeneratorNotImplementedError,

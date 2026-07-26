@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { ceriusApi } from '../services/api.js';
+import { xeriusFitApi } from '../services/api.js';
 
 /**
  * Root store. Only the RTK Query reducer is wired today; domain slices
@@ -8,9 +8,9 @@ import { ceriusApi } from '../services/api.js';
  */
 export const store = configureStore({
   reducer: {
-    [ceriusApi.reducerPath]: ceriusApi.reducer,
+    [xeriusFitApi.reducerPath]: xeriusFitApi.reducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(ceriusApi.middleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(xeriusFitApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Cerius is an AI-powered meal-planning app that generates personalized weekly meal plans and automated grocery lists for busy professionals. We target the $6B health/fitness market and the explosive growth in AI apps (1.7B downloads, $1.87B revenue in H1 2025).
+xeriusFit is an AI-powered meal-planning app that generates personalized weekly meal plans and automated grocery lists for busy professionals. We target the $6B health/fitness market and the explosive growth in AI apps (1.7B downloads, $1.87B revenue in H1 2025).
 
 **Business Model:** Freemium subscription ($5-8/month premium)  
 **Target:** 10K+ downloads, 500+ subscribers, 4.8+ rating, 5%+ conversion  
@@ -151,7 +151,7 @@ Cerius is an AI-powered meal-planning app that generates personalized weekly mea
 **Unique Value Proposition:**
 > "Get a week of personalized meals in 30 seconds. No planning. No stress. Just order groceries and cook."
 
-**Why Choose Cerius Over Competitors:**
+**Why Choose xeriusFit Over Competitors:**
 1. **Purest AI Experience** - We optimize for AI automation, not comprehensive tracking
 2. **Simplicity** - One flow: Profile → Plan → Groceries. That's it.
 3. **Fastest Generation** - AI meal plans in <5 seconds
@@ -245,7 +245,7 @@ Cerius is an AI-powered meal-planning app that generates personalized weekly mea
 
 ### Financial KPIs (Detailed Scenarios)
 
-> **Note (design review):** Figures below are **gross** subscription revenue. Net to Cerius = gross × 0.85 (Google's 15% subscription cut) minus AI API costs (~1-3% of revenue). E.g., Realistic $44,925 gross MRR ≈ **$38,186 net MRR**. Use net for runway math.
+> **Note (design review):** Figures below are **gross** subscription revenue. Net to xeriusFit = gross × 0.85 (Google's 15% subscription cut) minus AI API costs (~1-3% of revenue). E.g., Realistic $44,925 gross MRR ≈ **$38,186 net MRR**. Use net for runway math.
 
 **Conservative Scenario:**
 - Downloads: 50K

@@ -29,12 +29,12 @@ importers:
 
   apps/backend:
     dependencies:
-      '@cerius/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       '@google/genai':
         specifier: ^2.13.0
         version: 2.13.0(supports-color@7.2.0)
+      '@xeriusfit/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       compression:
         specifier: ^1.8.1
         version: 1.8.1(supports-color@7.2.0)
@@ -75,12 +75,12 @@ importers:
 
   apps/frontend:
     dependencies:
-      '@cerius/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       '@reduxjs/toolkit':
         specifier: ^2.12.0
         version: 2.12.0(react-redux@9.3.0(@types/react@19.2.17)(react@19.2.8)(redux@5.0.1))(react@19.2.8)
+      '@xeriusfit/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       react:
         specifier: ^19.2.8
         version: 19.2.8

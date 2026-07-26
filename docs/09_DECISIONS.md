@@ -1,6 +1,6 @@
 # 09_DECISIONS.md
 
-## Decision Log for Cerius
+## Decision Log for xeriusFit
 
 This document records all major architectural, engineering, and product decisions made during the MVP design phase. Each decision includes the rationale, alternatives considered, trade-offs, and date for future review.
 
@@ -529,7 +529,7 @@ Use Google Play Billing exclusively for subscriptions (no custom payment process
 - 15% on subscriptions (unchanged after 3 years)
 - 30% on one-time purchases (not applicable for MVP)
 
-**Cerius's Revenue:**
+**xeriusFit's Revenue:**
 - Subscription: $5.99 × 85% = $5.09/month
 - ARR with 7,500 subs: 7,500 × $5.09 × 12 = $458,100
 
@@ -881,7 +881,7 @@ Use `/v1/` URL prefix from day 1 to enable future versioning without breaking ch
 ### API URLs
 
 ```
-Base: https://api.cerius.app/v1
+Base: https://api.xeriusfit.app/v1
 Auth: POST /v1/auth/signup
 Profiles: GET /v1/profiles
 Meals: POST /v1/mealplans/generate
@@ -988,3 +988,28 @@ Google Play Billing
 
 All core dependencies can be implemented in parallel (9 engineers could work in parallel; 1 engineer does serial).
 
+
+---
+
+## D13: Project Renamed Cerius → xeriusFit (Local Paths Keep Old Name)
+
+**Date:** 2026-07-27  
+**Status:** ✅ APPROVED  
+**Stakeholders:** Founder
+
+### Decision
+
+The project is named **xeriusFit**. Canonical spellings:
+
+| Context | Spelling |
+|---|---|
+| Display name, user-facing strings, `appName` | `xeriusFit` |
+| Package names, npm scope, database, URLs | `xeriusfit` (e.g. `@xeriusfit/shared`) |
+| Android appId | `app.xeriusfit.android` |
+| JS identifiers | `xeriusFitApi` |
+
+Repo folder `C:\dev\cerius`, the git remote, and `C:\dev\secrets\cerius\` stay named `cerius` by design — do not rename. They are local/external paths whose value is that they already exist and resolve; renaming them buys nothing and breaks tooling, checked-out clones, and on-disk secret lookups.
+
+### Not Yet Applied Externally
+
+The MongoDB cluster/database, GitHub repo name, and Google Play Console entries are renamed **in the docs only**. Play Console `packageName` and subscription SKUs (`xeriusfit_premium_monthly`, `xeriusfit_premium_annual`) are **immutable once created** — verify the docs match Play Console before creating those products.

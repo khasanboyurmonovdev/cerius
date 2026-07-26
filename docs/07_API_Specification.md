@@ -2,7 +2,7 @@
 
 ## API Overview
 
-**Base URL:** `https://api.cerius.app/v1`
+**Base URL:** `https://api.xeriusfit.app/v1`
 
 **Protocol:** REST over HTTPS (TLS 1.3)
 
@@ -818,7 +818,7 @@ Authorization: Bearer <accessToken>
 {
   "success": true,
   "data": {
-    "shareUrl": "https://cerius.app/share/grocery/abc123xyz",
+    "shareUrl": "https://xeriusfit.app/share/grocery/abc123xyz",
     "shareToken": "abc123xyz",
     "expiresAt": "2025-01-27T10:35:00Z",
     "formats": {
@@ -860,8 +860,8 @@ Authorization: Bearer <accessToken>
 **Request:**
 ```json
 {
-  "packageName": "app.cerius.android",
-  "subscriptionId": "cerius_premium_monthly",
+  "packageName": "app.xeriusfit.android",
+  "subscriptionId": "xeriusfit_premium_monthly",
   "purchaseToken": "google_play_purchase_token"
 }
 ```
@@ -872,7 +872,7 @@ Authorization: Bearer <accessToken>
   "success": true,
   "data": {
     "isPremium": true,
-    "subscriptionId": "cerius_premium_monthly",
+    "subscriptionId": "xeriusfit_premium_monthly",
     "purchaseTime": "2025-01-15T14:30:00Z",
     "expiryTime": "2025-02-15T14:30:00Z",
     "autoRenewing": true,
@@ -1040,8 +1040,8 @@ X-RateLimit-Reset: 1705356600
 
 **URL Versioning:**
 ```
-https://api.cerius.app/v1/...
-https://api.cerius.app/v2/...
+https://api.xeriusfit.app/v1/...
+https://api.xeriusfit.app/v2/...
 ```
 
 **Old versions deprecated after 6 months**
@@ -1058,7 +1058,7 @@ Accept-Version: 1.0.0
 **Google Play Subscription Updates:**
 
 ```
-POST https://api.cerius.app/webhooks/google-play/pubsub
+POST https://api.xeriusfit.app/webhooks/google-play/pubsub
 
 Headers:
 X-Goog-MessageId: message-id
@@ -1086,7 +1086,7 @@ Body:
 **Allowed Origins:**
 ```
 Origin: capacitor://localhost (development)
-Origin: https://app.cerius.app (production web)
+Origin: https://app.xeriusfit.app (production web)
 ```
 
 **Allowed Methods:**
@@ -1151,7 +1151,7 @@ Content-Type, Authorization, Accept, X-Requested-With
 
 ## API Documentation
 
-**Live Documentation:** https://docs.cerius.app/api
+**Live Documentation:** https://docs.xeriusfit.app/api
 
 Generated from this spec using Swagger/OpenAPI tools.
 

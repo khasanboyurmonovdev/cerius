@@ -1,4 +1,4 @@
-import type { MealPlan, Profile } from '@cerius/shared';
+import type { MealPlan, Profile } from '@xeriusfit/shared';
 
 /**
  * Provider-agnostic contract for meal plan generation (D2).

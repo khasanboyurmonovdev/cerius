@@ -29,7 +29,7 @@ const envSchema = z
     FIREBASE_SERVICE_ACCOUNT_PATH: z.string().default(''),
 
     // Billing (D7 — Google Play via RevenueCat)
-    GOOGLE_PLAY_PACKAGE_NAME: z.string().default('app.cerius.android'),
+    GOOGLE_PLAY_PACKAGE_NAME: z.string().default('app.xeriusfit.android'),
     GOOGLE_PLAY_SERVICE_ACCOUNT_PATH: z.string().default(''),
 
     SENTRY_DSN: z.string().default(''),

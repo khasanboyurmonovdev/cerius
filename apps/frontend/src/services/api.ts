@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 /**
- * RTK Query base API. Feature endpoints are added with `ceriusApi.injectEndpoints`
+ * RTK Query base API. Feature endpoints are added with `xeriusFitApi.injectEndpoints`
  * from their own slices — this file stays free of feature logic.
  */
-export const ceriusApi = createApi({
-  reducerPath: 'ceriusApi',
+export const xeriusFitApi = createApi({
+  reducerPath: 'xeriusFitApi',
   baseQuery: fetchBaseQuery({
     baseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/v1',
   }),

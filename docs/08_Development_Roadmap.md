@@ -824,7 +824,7 @@ Week 4: Polish, Testing & Launch
   - Upload keystore to secure location
 
 - [ ] Play Store listing
-  - App title: "Cerius - AI Meal Planner"
+  - App title: "xeriusFit - AI Meal Planner"
   - Short description (80 chars)
   - Full description (with screenshots)
   - App icon (512x512 PNG)

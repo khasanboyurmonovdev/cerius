@@ -22,7 +22,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                       CERIUS SYSTEM ARCHITECTURE                    │
+│                       XERIUSFIT SYSTEM ARCHITECTURE                    │
 └─────────────────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -309,7 +309,7 @@ src/
 
 ### API Structure
 
-**Base URL:** `https://api.cerius.app/v1`
+**Base URL:** `https://api.xeriusfit.app/v1`
 
 **Endpoints by Domain:**
 
@@ -539,8 +539,8 @@ App.addListener('backButton', () => {
 **Capacitor Configuration (`capacitor.json`):**
 ```json
 {
-  "appId": "app.cerius.android",
-  "appName": "Cerius",
+  "appId": "app.xeriusfit.android",
+  "appName": "xeriusFit",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "plugins": {
@@ -675,7 +675,7 @@ await Preferences.set({ key: 'theme', value: 'dark' })
 app.use(cors({
   origin: [
     'capacitor://localhost',  // Android dev
-    'https://app.cerius.app',  // Production (if web version)
+    'https://app.xeriusfit.app',  // Production (if web version)
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
@@ -918,7 +918,7 @@ Firebase (store license)
 
 **SKU Configuration (Google Play Console):**
 ```
-Subscription SKU: "cerius_premium_monthly"
+Subscription SKU: "xeriusfit_premium_monthly"
 - Price: $5.99
 - Renewal: Monthly
 - Trial: 7 days (optional)
@@ -926,7 +926,7 @@ Subscription SKU: "cerius_premium_monthly"
 - Grace period: 3 days
 - Restore: Allow renewal after cancellation
 
-Subscription SKU: "cerius_premium_annual"
+Subscription SKU: "xeriusfit_premium_annual"
 - Price: $49.99
 - Renewal: Yearly
 - Trial: 7 days (optional)
@@ -975,8 +975,8 @@ async function verifyGooglePlayReceipt(receipt: string, userId: string) {
   
   const result = await androidPublisher.purchases.subscriptions.get({
     auth: googleAuthClient,
-    packageName: 'app.cerius.android',
-    subscriptionId: 'cerius_premium_monthly',
+    packageName: 'app.xeriusfit.android',
+    subscriptionId: 'xeriusfit_premium_monthly',
     token: receipt
   })
   
@@ -1109,7 +1109,7 @@ async function sendWeeklyReminders() {
         body: 'Ready to plan next week\'s meals?',
         data: {
           action: 'open_meal_planner',
-          deeplink: 'cerius://mealplans'
+          deeplink: 'xeriusfit://mealplans'
         }
       })
     }
@@ -1147,7 +1147,7 @@ admin.messaging().sendMulticast({
 **Collections & Documents:**
 
 ```
-mongodb (cerius-production)/
+mongodb (xeriusfit-production)/
 ├── users/{userId}
 │   ├── email: string
 │   ├── name: string
@@ -1429,7 +1429,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJsonPlainText: ${{ secrets.PLAY_STORE_SERVICE_ACCOUNT }}
-          packageName: app.cerius.android
+          packageName: app.xeriusfit.android
           releaseFiles: 'android/app/build/outputs/bundle/release/**/*.aab'
           track: internal  # Beta testing first
 ```
@@ -1438,7 +1438,7 @@ jobs:
 
 **Backend (.env.production):**
 ```
-DATABASE_URL=mongodb+srv://user:password@cluster.mongodb.net/cerius
+DATABASE_URL=mongodb+srv://user:password@cluster.mongodb.net/xeriusfit
 JWT_SECRET=<long-random-string>
 OPENAI_API_KEY=<openai-key>
 GOOGLE_PLAY_CREDENTIALS=<json-encoded>
@@ -1451,7 +1451,7 @@ PORT=3000
 
 **Frontend (capacitor.json + .env):**
 ```
-VITE_API_BASE_URL=https://api.cerius.app/v1
+VITE_API_BASE_URL=https://api.xeriusfit.app/v1
 VITE_FIREBASE_CONFIG={...}
 VITE_OPENAI_ORG_ID=<org-id>
 ```

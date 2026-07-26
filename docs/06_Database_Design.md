@@ -42,7 +42,7 @@
 ## Collection Overview
 
 ```
-MongoDB Database: "cerius-production"
+MongoDB Database: "xeriusfit-production"
 
 Collections:
 ├── users
@@ -1184,7 +1184,7 @@ mongodb+srv://user:password@cluster.mongodb.net/dbname?
 db.createRole({
   role: "backupReader",
   privileges: [{
-    resource: { db: "cerius-production", collection: "" },
+    resource: { db: "xeriusfit-production", collection: "" },
     actions: ["find"]
   }],
   roles: []
@@ -1194,7 +1194,7 @@ db.createRole({
 db.createUser({
   user: "app_user",
   pwd: "complex-password",
-  roles: [{ role: "readWrite", db: "cerius-production" }]
+  roles: [{ role: "readWrite", db: "xeriusfit-production" }]
 })
 ```
 
@@ -1349,12 +1349,12 @@ db.auditLogs.deleteMany({
 **Manual Backups (Production):**
 ```bash
 # Daily backup script
-mongodump --uri "mongodb+srv://user:pass@cluster.mongodb.net/cerius-production" \
-  --archive=cerius-backup-$(date +%Y%m%d).archive \
+mongodump --uri "mongodb+srv://user:pass@cluster.mongodb.net/xeriusfit-production" \
+  --archive=xeriusfit-backup-$(date +%Y%m%d).archive \
   --gzip
 
 # Upload to S3
-aws s3 cp cerius-backup-*.archive s3://cerius-backups/
+aws s3 cp xeriusfit-backup-*.archive s3://xeriusfit-backups/
 ```
 
 ### Recovery Procedures
@@ -1363,7 +1363,7 @@ aws s3 cp cerius-backup-*.archive s3://cerius-backups/
 ```bash
 # Restore from archive
 mongorestore --uri "mongodb+srv://user:pass@cluster.mongodb.net/test-db" \
-  --archive=cerius-backup-20250120.archive \
+  --archive=xeriusfit-backup-20250120.archive \
   --gzip
 ```
 
@@ -1382,7 +1382,7 @@ mongorestore --uri "mongodb+srv://user:pass@cluster.mongodb.net/test-db" \
 mongorestore --uri "mongodb+srv://..." \
   --archive=backup.archive \
   --gzip \
-  --db=cerius-production \
+  --db=xeriusfit-production \
   --collection=users
 ```
 
@@ -1414,9 +1414,9 @@ mongorestore --uri "mongodb+srv://..." \
 
 ```javascript
 // Shard key: userId (good distribution)
-sh.shardCollection("cerius-production.mealPlans", { userId: 1 })
-sh.shardCollection("cerius-production.groceries", { userId: 1 })
-sh.shardCollection("cerius-production.auditLogs", { userId: 1 })
+sh.shardCollection("xeriusfit-production.mealPlans", { userId: 1 })
+sh.shardCollection("xeriusfit-production.groceries", { userId: 1 })
+sh.shardCollection("xeriusfit-production.auditLogs", { userId: 1 })
 
 // Why userId?
 // - Even distribution across shards

@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "0.0.1",
-  "description": "Cerius REST API (Node + Express + TypeScript)",
+  "description": "xeriusFit REST API (Node + Express + TypeScript)",
   "private": true,
   "type": "module",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@cerius/shared": "workspace:*",
+    "@xeriusfit/shared": "workspace:*",
     "@google/genai": "^2.13.0",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
