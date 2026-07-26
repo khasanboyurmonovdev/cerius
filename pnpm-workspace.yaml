@@ -1,0 +1,10 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+# Postinstall scripts are blocked by default. Approve only what is required.
+allowBuilds:
+  # Required: installs the native esbuild binary that tsx runs on.
+  esbuild: true
+  # Not required for our usage — SDK is imported for types/wiring only.
+  '@google/genai': false
+  protobufjs: false

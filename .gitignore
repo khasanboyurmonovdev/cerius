@@ -159,6 +159,11 @@ firebase-adminsdk*.json
 .env.local
 .env.*.local
 
+# Build outputs (monorepo)
+dist/
+build/
+*.tgz
+
 # OS/IDE cruft
 Thumbs.db
 .idea/
@@ -168,3 +173,9 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# pnpm (monorepo store) — keep pnpm-lock.yaml for reproducible installs
+.pnpm-store/
+
+# Turbo/build caches
+.turbo/
