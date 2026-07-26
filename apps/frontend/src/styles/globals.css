@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/**
+ * Brand tokens (Constitution). Tailwind v4 is CSS-first: values declared here
+ * become utilities automatically (e.g. `bg-brand-primary`, `text-brand-accent`).
+ * Material 3 surface/state tokens get layered in when UI work starts.
+ *
+ * Brand rule: blue family only — no green anywhere in the brand palette.
+ */
+@theme {
+  --color-brand-primary: #2563eb;
+  --color-brand-primary-hover: #1d4ed8;
+  --color-brand-primary-active: #1e40af;
+
+  --color-brand-accent: #0ea5e9;
+  --color-brand-accent-hover: #0284c7;
+
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-muted: #f1f5f9;
+  --color-brand-on-surface: #0f172a;
+  --color-brand-on-surface-muted: #475569;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}

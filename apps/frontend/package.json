@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "Cerius Android client (React + TypeScript + Vite + Capacitor)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "@cerius/shared": "workspace:*",
+    "@reduxjs/toolkit": "^2.12.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-redux": "^9.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.6.0",
+    "vite": "^8.1.5"
+  }
+}
