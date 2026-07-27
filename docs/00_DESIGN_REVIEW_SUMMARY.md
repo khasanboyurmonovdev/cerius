@@ -15,7 +15,7 @@ Eight factual/consistency errors were found and fixed in place. Every correction
 | 2 | 05, 09 (D7), 08 | Named billing plugin doesn't exist. Integration layer is now **RevenueCat** (`@revenuecat/purchases-capacitor`) over Google Play Billing |
 | 3 | 05 | Firestore-as-datastore contradiction removed. **MongoDB Atlas is the only datastore**; Firebase = Auth/FCM/Analytics/Crashlytics only |
 | 4 | 09 (D2), 08 | "GPT-4/3.5" outdated. Provider now a Day 11 bake-off: **Gemini Flash vs gpt-4o-mini class**, behind a swappable `MealPlanGenerator` interface (founder already uses Gemini in another product) |
-| 5 | 05 | targetSdkVersion 34 → **35** (current Google Play requirement) |
+| 5 | 05 | targetSdkVersion 34 → **36** (current Google Play requirement) |
 | 6 | 04 | Free-tier contradiction (1/week vs "after 3") resolved via new **Canonical Free-Tier & Paywall Rules** section: hard limit 1/week, soft upsell after 3rd cumulative generation |
 | 7 | 08 | Timeline honesty note: Day 30 = internal-track commit, public launch Day 32-37 acceptable; testing days are uncuttable |
 | 8 | 03 | Revenue tables labeled **gross**; net = gross × 0.85 minus AI costs |

@@ -558,10 +558,10 @@ App.addListener('backButton', () => {
 **Android Build (`android/app/build.gradle`):**
 ```gradle
 android {
-  compileSdkVersion 35
+  compileSdkVersion 36
   defaultConfig {
     minSdkVersion 24  // Android 7.0+
-    targetSdkVersion 35  // Google Play requires target API 35 for new apps (as of Aug 2025)
+    targetSdkVersion 36  // Google Play requires target API 36 for new apps (from 2026-08-31); see D14
     versionCode = System.getenv("GITHUB_RUN_NUMBER").toInteger() ?: 1
     versionName = "1.0.0"
   }
