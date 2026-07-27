@@ -179,3 +179,12 @@ logs/
 
 # Turbo/build caches
 .turbo/
+
+# Capacitor — regenerated on every `cap sync`, contains pnpm-store paths / churns on plugin changes
+apps/frontend/android/capacitor.settings.gradle
+apps/frontend/android/app/capacitor.build.gradle
+
+# Fix dead root-anchored Android rules — real project lives at apps/frontend/android/
+**/android/.gradle/
+**/android/app/build/
+**/android/build/
